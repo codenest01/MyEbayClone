@@ -8,8 +8,8 @@ import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { BiSolidMap } from "react-icons/bi";
 import "../styles/Header.css";
-import SubNav from "./SubNav";
-import SelectCat from "./SelectCat";
+import SubNav from "../layout/SubNav";
+import SelectCat from "../layout/SelectCat";
 
 function Header() {
 
