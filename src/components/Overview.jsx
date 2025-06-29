@@ -8,7 +8,7 @@ export default function Overview({children}) {
    <div>
      
       <div className="container-1"style={{ marginBottom: 0, paddingBottom: 0 }} >
-       <h3 className="mb-0">My eBay</h3>
+       <h3 className="mb-0 text-danger">My eBay</h3>
 
     <div className="row">
       <div className="d-flex  anchors">
