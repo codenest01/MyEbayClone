@@ -9,7 +9,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { BiSolidMap } from "react-icons/bi";
 import "../styles/layout/Header.css";
 import SubNav from "./SubNav";
-import SelectCat from "../layout/SelectCat";
+import SelectCat from "./SelectCat";
 
 function Header() {
 
