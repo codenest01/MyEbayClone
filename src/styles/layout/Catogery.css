@@ -149,8 +149,6 @@ h1 {
   .new-image-wrapper-sm {
     display: none;
   }
-
-  
 }
 
 
@@ -164,16 +162,17 @@ h1 {
   .new-shop-category {
     display: none;
   }
-  .prod-title{
-    font-size: .8rem;
-    font-weight: 400;
 
+  .prod-title {
+    font-size: 0.8rem;
+    font-weight: 400;
   }
-  
-  .brnd-name{
-    font-size: .675rem;
+
+  .brnd-name {
+    font-size: 0.675rem;
     word-break: break-word;
   }
+
   .cate-product {
     height: 130px;
     overflow: hidden;
@@ -182,10 +181,6 @@ h1 {
     align-items: stretch;
   }
 
-  
-}
-
-@media (max-width: 664px) {
   .new-image-for-lg-dev {
     display: none;
   }
