@@ -1,0 +1,9 @@
+.containerr {
+    width: 100%;
+    padding: 10px 23px;
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    flex-wrap: nowrap; /* Ensure the columns stay in a single row */
+    justify-content: space-between; /* Distribute space between product carts */
+    position: relative; /* Add relative positioning for the button */
+  }

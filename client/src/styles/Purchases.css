@@ -1,0 +1,53 @@
+.button {
+  white-space: nowrap;
+  background-color: white;
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.purchases-wrapper {
+  position: relative;
+  gap: 0.5rem;
+}
+
+.purchases {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  scroll-behavior: smooth;
+}
+
+.purchases::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-btn-left,
+.scroll-btn-right {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+}
+
+.scroll-btn:hover {
+  background-color: transparent;
+}
+
+.dropdown {
+  font-size: 0.875rem;
+}
+
+@media (max-width: 764px) {
+  .d-flex.purchases-wrapper {
+    display: none !important;
+  }
+}

@@ -1,0 +1,192 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.new-container {
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.new-shop-category h2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.new-shop-category ul {
+  font-size: 0.875rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-shop-category li {
+  color: #191919;
+  overflow: visible;
+  line-height: 1.4;
+  font-family: 'Market Sans', Arial, sans-serif;
+  margin-top: 12px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+.new-shop-category li:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.new-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align heading and paragraph at the top */
+}
+
+.new-heading {
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 0 1px #000;
+  margin-bottom: 10px;
+}
+
+.new-description {
+  color: #ffffff;
+  white-space: normal;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.new-cta-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 7%;
+  transform: translateX(-50%);
+  padding: 6px 20px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: 2px solid wheat;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.new-background-img {
+  border-radius: 10px;
+  width: 96%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+.new-best-selling h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.cate-product {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.product-image-2 {
+  height: 200px;
+  width: 200px; /* Ensure the image takes the container width */
+  border-radius: 0.2rem; /* Optional: Add rounded corners */
+  max-height: 100%;
+  object-fit: cover; /* or 'cover' if you want it to crop instead */
+}
+
+
+.prod-title{
+  font-size: 1rem;
+  font-weight: 400;
+ 
+  text-overflow: ellipsis;
+}
+
+.brnd-name{
+  font-size: .875rem;
+  word-break: break-word;
+}
+.cate-product{
+  position: relative;
+}
+
+
+
+
+/* Responsive image visibility */
+@media (min-width: 664px) {
+  .new-image-wrapper-sm {
+    display: none;
+  }
+
+  
+}
+
+
+
+
+@media (max-width: 664px) {
+  .new-image-wrapper-lg {
+    display: none;
+  }
+
+  .new-shop-category {
+    display: none;
+  }
+  .prod-title{
+    font-size: .8rem;
+    font-weight: 400;
+
+  }
+  
+  .brnd-name{
+    font-size: .675rem;
+    word-break: break-word;
+  }
+  .cate-product {
+    height: 130px;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  
+}
+
+@media (max-width: 664px) {
+  .new-image-for-lg-dev {
+    display: none;
+  }
+}

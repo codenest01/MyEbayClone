@@ -1,0 +1,375 @@
+/* Apply to entire page */
+body, html {
+  overflow-x: hidden;
+}
+
+.image-container-1 {
+    position: relative;
+    height: 500px;
+    overflow: hidden; /* ✅ Ensures the zoomed image stays inside */
+    border-radius: 1rem;
+  }
+  
+  .zoom-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* ✅ Prevents image from spilling outside */
+  }
+  
+  .zoom-img {
+    padding: 22px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: center center; /* This will be dynamically changed on hover */
+    display: block;
+  }
+  
+  .image-container-1 img {
+    position: relative;
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the whole image fits without cropping */
+    transition: transform 0.2s ease;
+    display: block;
+  }
+  
+  .zoom-icon {
+    position: absolute;
+    top: 10px;
+    right: 75px;
+  
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 38px;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .zoom-icon,
+  .fav-icon {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+  }
+ 
+  .fav-icon {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    background-color: #fff;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 25px; /* smooth pill shape */
+    height: auto;
+  }
+  
+  .fav-count {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .image-container-1.zoom-active {
+    cursor: zoom-out;
+  }
+  
+  .image-container-1:not(.zoom-active) {
+    cursor: zoom-in;
+  }
+  
+  .row {
+    align-items: stretch;
+  }
+  
+  /* Make thumbnail container scrollable */
+  #thumbWrapper {
+    max-height: 70vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    position: relative; /* required for absolutely-positioned buttons */
+  }
+  
+  /* Common style for scroll buttons */
+  .scroll-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    z-index: 2;
+   font-size: 29px;
+    cursor: pointer;
+    border: 1px solid rgb(202, 199, 199);
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  /* Up button at top */
+  #scrollUpBtn {
+    top: 5px;
+  }
+  
+  /* Down button at bottom */
+  #scrollDownBtn {
+    bottom: 5px;
+  }
+  
+  .sm-image {
+    padding: 2px;
+  
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .sm-image:hover {
+    border: 1px solid black; /* Highlight on hover */
+  }
+  .sm-images-container {
+   height: 70vh;
+    overflow: auto;
+  }
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .left-btn {
+    left: 1px;
+  }
+  
+  .right-btn {
+    right: 1px;
+  }
+  .item-box {
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .item-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .item-box ul li strong {
+    min-width: 120px;
+    display: inline-block;
+    color: #000;
+  }
+  .feedback-item p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .nav-tabs .nav-link.active {
+    font-weight: 500;
+    border-color: transparent transparent #000 #000;
+  }
+    
+  .title {
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: normal;
+    word-wrap: normal;
+  }
+  span {
+    line-height: 1.43;
+  }
+  .note {
+    font-style: italic;
+    font-size: 0.875rem;
+    line-height: 1.43;
+  }
+  select {
+    border: 2px solid #ccc; /* Optional: adds a border */
+    width: 100%;
+    padding: 6px; /* Optional: improves appearance */
+    box-sizing: border-box; /* Ensures padding doesn’t exceed 100% width */
+  }
+  .button-2 {
+    background-color: white;
+    border: 1px solid blue;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .zoom-wrapper:fullscreen img,
+  .zoom-wrapper:-webkit-full-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* or 'cover' depending on your preference */
+  }
+  
+  .heading-about {
+      padding: 12px 12px 3px 12px;
+      border-bottom: none;
+  
+    font-weight: bold;
+    line-height: 1.375;
+    color: #0968f6;
+    font-family: inherit;
+  
+  }
+  
+  .about-item-container {
+   
+    border: 1px solid rgb(202, 200, 200);
+   
+  }
+  .ext-info a {
+    font-size: small;
+  }
+  h2 {
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .col-8{
+  font-weight: bold;
+  }
+  
+  .share a{
+  color: darkslategrey;
+  }
+  
+  .nav-btn{
+  font-size: 32px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(114, 111, 111);
+    background-color: #fff;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE 10+ */
+    overflow-y: auto;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;              /* Chrome, Safari, Opera */
+  }
+  
+.main-container{
+
+  padding: 1rem;
+}
+.image-scroll-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.image-scroll-track {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.image-scroll-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+/* styles.css */
+
+.major-image-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 40vh;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.5s ease-in-out;
+}
+
+.major-image-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scroll bar for cleaner UI */
+}
+
+.image-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.image-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dot-container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.9);
+}
+.product-info{
+  margin-left: 3rem;
+}
+  @media (max-width: 764px) {
+ 
+    .additional-info,
+     .dropdowns{
+      display: none;
+    }
+  .additional-images{
+    display: none;
+  }
+  .product-info{
+    margin-left: 0px;
+  }
+  .share{
+    display: none;
+  }
+  .main-image{
+    display: none;
+  }
+ 
+    /* .nav-btn,
+    .zoom-icon,
+    .fav-icon {
+      font-size: 1.5rem;
+    } */
+  }
+     
+
+  
+  @media (min-width: 764px) {
+    .sm-size-devices{
+      display: none;
+    }
+   
+   
+    }

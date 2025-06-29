@@ -1,0 +1,304 @@
+.image-container {
+  margin-top: 118px;
+  position: relative;
+  width: 100%;
+  height: 340px;
+}
+.image-for-lg-dev {
+  margin-top: 8px;
+}
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 2.3rem; /* Adjusted for better responsiveness */
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 0 1px #000;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #ffffff;
+  white-space: normal;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.containerr {
+  width: 100%;
+  padding: 10px 23px;
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  flex-wrap: nowrap; /* Ensure the columns stay in a single row */
+  justify-content: space-between; /* Distribute space between product carts */
+  position: relative; /* Add relative positioning for the button */
+}
+
+
+.custom-col {
+  flex: 0 0 auto; /* Ensure the columns don't shrink or grow */
+  width: 236px;
+  height: 320px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.product-image {
+  width:auto;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-name {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.product-name a {
+  color: inherit;
+  text-decoration: none;
+}
+.product-name a:hover {
+  text-decoration: underline;
+}
+.product-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-foreground-primary);
+  margin-top: 5px;
+}
+.product-actions {
+  margin-top: 15px;
+  text-align: center;
+}
+.product-actions .btn {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.recent-items-text {
+  font-size: 22px;
+  font-family: Market Sans, Arial, sans-serif;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.recomended-items-text {
+  font-size: 22px;
+  font-family: Market Sans, Arial, sans-serif;
+  line-height: 28px;
+  font-weight: 700;
+}
+.recomended-items-text:hover {
+  text-decoration: underline;
+}
+
+/* catogery images */
+.category-images img{
+  height: 185px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.column {
+  padding: 0px;
+  text-align: center;
+}
+.row {
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 10px;
+  overflow-x: hidden;
+  margin-bottom: 92px;
+}
+.row img {
+  cursor: pointer;
+}
+
+.title a {
+  font-size: 14px;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.title a:hover {
+  border-bottom: 2px solid black;
+  display: inline-block; /* Ensure the border is fixed to the content width */
+  width: fit-content; /* Adjust the width to fit the content */
+  animation: borderExpand 0.3s ease-in-out; /* Add animation */
+}
+
+.custom-col {
+  position: relative; /* Ensures child elements can be positioned absolutely */
+}
+
+.product-image {
+  width: 100%; /* Ensure the image takes the container width */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.favorite-icon-container {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: white; /* White circle background */
+  border-radius: 50%; /* Makes it a circle */
+  height: 40px; /* Adjust for circle size */
+  width: 40px; /* Adjust for circle size */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  cursor: pointer;
+  z-index: 10; /* Ensure it stays above other elements */
+}
+
+.favorite-icon {
+  font-size: 20px; /* Adjust icon size */
+  /* Icon color */
+}
+
+
+
+@keyframes borderExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 974px) {
+  .col-7 {
+    display: none;
+  }
+  .col-12.col-sm-2 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .category-images img{
+    height: 95px;
+    width: auto;
+    border-radius: 50%;
+  }
+
+}
+
+
+@media (max-width: 1226px) {
+  .product-image {
+    width: 140px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .custom-col {
+    width: 140px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+}
+@media (min-width: 664px) {
+  .next-btn {
+    display: none;
+  }
+  .title a {
+    display: flex;
+   margin-left: 70%;
+  }
+  .image-container-for-sm {
+    display: none;
+  }
+}
+@media (max-width: 664px) {
+  .next-btn {
+    position: absolute;
+    right: 20px; /* Adjust this value for more space if necessary */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Precisely center it vertically */
+    z-index: 10; /* Ensure it stays on top of the products */
+  }
+  .image-container-for-lg {
+    display: none;
+  }
+
+  .image-container-for-sm {
+    margin-top: 18px;
+  }
+
+  .recent-items {
+    margin-top: 70px;
+  }
+  .recomended-items-text {
+    font-size: 18px;
+  }
+  .recent-items-text {
+    font-size: 18px;
+  }
+  .favorite-icon {
+    font-size: 14px;
+  }
+
+  .favorite-icon-container {
+    height: 28px;
+    width: 28px;
+    top: 6px;
+    right: 6px;
+  }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-overlay {
+    left: 5%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 664px) {
+  .image-for-lg-dev {
+    display: none;
+  }
+}

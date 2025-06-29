@@ -1,0 +1,48 @@
+/* Universal Button Style */
+.socialBtns button {
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border-radius: 500px;
+    color: #444444;
+    width: 95%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialBtns button img {
+    position: absolute;
+    left: 16px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .socialBtns button:hover {
+    border-color: rgb(150, 150, 150);
+  }
+  
+  /* Sign In Submit Button */
+  .signInButton button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #2a2c2a;
+    color: ghostwhite;
+  }
+  

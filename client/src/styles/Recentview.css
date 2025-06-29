@@ -1,0 +1,24 @@
+h6{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #3665f3;
+  }
+  .price{
+    font-size: 1.5rem;
+  }
+  .text-muted{
+  font-size: 0.75rem;
+  line-height: 16px;
+  font-family: "Market Sans", Arial, sans-serif;
+  cursor: pointer
+  }
+  .text-secondary{
+    font-size: 0.75rem;
+    line-height: 16px;
+    cursor: pointer;
+    font-family: "Market Sans", Arial, sans-serif;
+  }
+  img{
+    height: 286px;
+    width: 100%;
+  }

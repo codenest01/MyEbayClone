@@ -1,0 +1,94 @@
+
+.ebay-footer {
+  margin-top: 122px;
+  
+    color: #333;
+  }
+  
+  .ebay-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .ebay-footer .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ebay-footer .col {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .ebay-footer h5 {
+    color: #191919;
+   font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .ebay-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+  .ebay-footer ul li a {
+    font-size: 12px;
+    display: inline-block;
+    color: #707070 ;
+    text-decoration: none;
+  }
+  
+  .ebay-footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .ebay-footer .text-center {
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .copyright{
+    font-size: 12px;
+    color: #41413f;
+    font-family: "Helvetica neue", Helvetica, Arial, Sans-serif;
+  }
+
+  .footer-lists li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Market Sans', Arial, sans-serif;
+    
+  }
+  .footer-lists  a{
+   
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Market Sans', Arial, sans-serif;
+    
+  }
+  .footer-lists li {
+    margin-bottom: 18px; /* Adjust the value as needed */
+  }
+  
+  .footer-lists li:last-child {
+    margin-bottom: 30px; /* Remove margin from the last list item for clean spacing */
+  }
+  
+
+  @media (max-width:490px) {
+    .ebay-footer{
+      display:none
+    }
+  }
+
+  @media (min-width:490px) {
+    .footer-for-small-devices{
+      display:none
+    }
+  }

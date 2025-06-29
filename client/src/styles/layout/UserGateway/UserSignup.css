@@ -1,0 +1,109 @@
+
+.full-height-row {
+    min-height: 100vh;
+  }
+  .left-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: 100vh;
+   
+  }
+  .right-content h3 {
+    font-size: 30px;
+    line-height: 40px;
+    unicode-bidi: isolate;
+    font-family: Market Sans, Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #212529;
+  }
+  .btn-group .btn-check:checked + .btn {
+    background-color: black;
+    color: white;
+    border-color: black;
+  }
+  .password-guide{
+    color: #707070;
+    font-size: 12px;
+    
+  }
+  .socialButtons button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #2a2c2a ;
+    color: ghostwhite;
+  }
+  
+  form input {
+    border-color: #a5a2a2 !important;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .socialButtons {
+    display: flex;
+    justify-content: space-between; /* Align buttons on the same line */
+    gap: 16px; /* Add space between buttons */
+    margin-top: 20px;
+  }
+  
+  .socialButtons button {
+    background-color: #ffffff;
+   
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px; /* Adjust font size */
+    position: relative;
+    font-weight: 700;
+    border-radius: 500px;
+    color: #444444;
+    padding: 10px 49px !important;
+    min-height: 48px;
+    max-width: min-content;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
+    gap: 10px; /* Add space between text and icon */
+    border: 1px solid #000000; /* Border for visual effect */
+  }
+  
+  .socialButtons button img {
+    height: 24px; /* Adjust image size */
+    width: 24px; /* Adjust image size */
+  }
+  
+  .socialButtons button:hover {
+    border-color: rgb(150, 150, 150);
+    background-color: #f0f0f0; /* Light background on hover */
+  }
+  
+  @media (max-width: 764px) {
+    .socialButtons button {
+      
+    }
+    .socialButtons {
+      justify-content: center;
+      flex-wrap: wrap;
+     
+    }
+     }
