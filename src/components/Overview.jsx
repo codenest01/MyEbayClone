@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Overview.css';
+import '../styles/Overviewpg.css';
 import productImage from "../images/shoe.jpg"
 import { FaRegHeart } from "react-icons/fa6"; 
 export default function Overview({children}) {
