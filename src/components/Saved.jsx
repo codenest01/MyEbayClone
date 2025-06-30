@@ -1,7 +1,7 @@
 import React from 'react';
 import Overview from './Overview';
 import '../styles/Saved.css'; // Make sure to import your CSS
-import '../styles/Saved.css';
+
 
 function Saved() {
   return (

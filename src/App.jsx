@@ -3,7 +3,7 @@ import "./index.css";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ShowProducts from "./components/ShowProducts";
 import Catogery from "./components/Catogery";
-import Header from "./components/Header";
+import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import UserLogin from "./components/UserGateway/UserLogin";
 import UserSignup from "./components/UserGateway/UserSignup";
